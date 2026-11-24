@@ -30620,3 +30620,76 @@ install_symlink {
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
+
+cc_prebuilt_binary {
+    name: "vendor.qti.hardware.servicetrackeraidl-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.hardware.servicetrackeraidl-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libhardware",
+                "libutils",
+                "libbinder_ndk",
+                "vendor.qti.hardware.servicetrackeraidl-V1-ndk",
+                "vendor.qti.hardware.servicetrackeraidl-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.servicetrackeraidl-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.qti.hardware.servicetrackeraidl-impl.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libhardware",
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "vendor.qti.hardware.servicetrackeraidl-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.qti.hardware.servicetrackeraidl-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetrackeraidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}

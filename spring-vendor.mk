@@ -573,6 +573,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spring/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service_spring.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service_spring.rc \
     vendor/xiaomi/spring/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/xiaomi/spring/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
+    vendor/xiaomi/spring/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
     vendor/xiaomi/spring/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/xiaomi/spring/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/xiaomi/spring/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
@@ -1776,6 +1777,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.color-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.perf2-hal-service \
+    vendor.qti.hardware.servicetrackeraidl-impl \
+    vendor.qti.hardware.servicetrackeraidl-service \
+    vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.sensorscalibrate-service \
