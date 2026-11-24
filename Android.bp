@@ -4,12 +4,7 @@
 
 soong_namespace {
     imports: [
-        "hardware/qcom-caf/sm6375-6.1",
-        "hardware/qcom-caf/wlan",
         "hardware/xiaomi",
-        "vendor/qcom/opensource/commonsys/display",
-        "vendor/qcom/opensource/commonsys-intf/display",
-        "vendor/qcom/opensource/dataservices",
     ],
 }
 
@@ -4380,34 +4375,6 @@ cc_prebuilt_library_shared {
                 "com.qti.chi.override",
                 "libchilog",
                 "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.bluetooth_audio@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -21767,34 +21734,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.mwqemadapter@1.0",
     owner: "xiaomi",
     strip: {
@@ -27082,9 +27021,6 @@ android_app_import {
     name: "QtiTelephony",
     owner: "xiaomi",
     apk: "proprietary/system_ext/priv-app/QtiTelephony/QtiTelephony.apk",
-    required: [
-        "QtiTelephonyCompat",
-    ],
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -27109,9 +27045,6 @@ android_app_import {
     name: "ims",
     owner: "xiaomi",
     apk: "proprietary/system_ext/priv-app/ims/ims.apk",
-    required: [
-        "QtiTelephonyCompat",
-    ],
     certificate: "platform",
     dex_preopt: {
         enabled: false,
