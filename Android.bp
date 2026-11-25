@@ -7363,7 +7363,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libbase",
                 "libbinder_ndk",
-                "vendor.qti.qspmhal-V1-ndk",
+                "vendor.qti.qspmhal-V1-ndk_vendor",
                 "libqspm-mem-utils-vendor",
                 "libdl",
                 "libz",
@@ -15968,7 +15968,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqspm-mem-utils-vendor.so",
             ],
             shared_libs: [
-                "vendor.qti.qspmhal-V1-ndk",
+                "vendor.qti.qspmhal-V1-ndk_vendor",
                 "libcutils",
                 "libc++",
                 "libc",
@@ -15997,7 +15997,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "vendor.qti.hardware.perf2-V1-ndk",
+                "vendor.qti.hardware.perf2-V1-ndk_vendor",
                 "libbase",
                 "libbinder_ndk",
                 "libc++",
@@ -16030,7 +16030,7 @@ cc_prebuilt_library_shared {
                 "libq-perflog",
                 "libxml2",
                 "libqti-util",
-                "vendor.qti.hardware.perf2-V1-ndk",
+                "vendor.qti.hardware.perf2-V1-ndk_vendor",
                 "libbase",
                 "libthermalclient",
                 "libqti-perfd-client",
@@ -21820,7 +21820,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf2-V1-ndk",
+    name: "vendor.qti.hardware.perf2-V1-ndk_vendor",
+    stem: "vendor.qti.hardware.perf2-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -24388,7 +24389,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal-V1-ndk",
+    name: "vendor.qti.qspmhal-V1-ndk_vendor",
+    stem: "vendor.qti.qspmhal-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -24426,7 +24428,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "vendor.qti.qspmhal-V1-ndk",
+                "vendor.qti.qspmhal-V1-ndk_vendor",
                 "libqspm-mem-utils-vendor",
                 "liblog",
                 "libcutils",
@@ -24446,7 +24448,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal@1.0",
+    name: "vendor.qti.qspmhal@1.0_vendor",
+    stem: "vendor.qti.qspmhal@1.0",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -28555,7 +28558,7 @@ cc_prebuilt_binary {
                 "libbase",
                 "libutils",
                 "libbinder_ndk",
-                "vendor.qti.hardware.perf2-V1-ndk",
+                "vendor.qti.hardware.perf2-V1-ndk_vendor",
                 "libperfconfig",
                 "libperfgluelayer",
                 "libqti-perfd-client",
@@ -30257,7 +30260,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/vendor.qti.qspmhal-service",
             ],
             shared_libs: [
-                "vendor.qti.qspmhal-V1-ndk",
+                "vendor.qti.qspmhal-V1-ndk_vendor",
                 "vendor.qti.qspmhal-impl",
                 "liblog",
                 "libutils",
