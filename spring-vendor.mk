@@ -172,6 +172,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spring/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/spring/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/xiaomi/spring/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    vendor/xiaomi/spring/proprietary/recovery/root/lib/firmware/focaltech_ts_fw_tm.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/focaltech_ts_fw_tm.bin \
+    vendor/xiaomi/spring/proprietary/recovery/root/lib/firmware/novatek_ts_fw_csot.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_fw_csot.bin \
+    vendor/xiaomi/spring/proprietary/recovery/root/lib/firmware/novatek_ts_fw_csot_erp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_fw_csot_erp.bin \
     vendor/xiaomi/spring/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/spring/proprietary/system_ext/etc/init/qspa_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspa_system.rc \
     vendor/xiaomi/spring/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
